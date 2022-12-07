@@ -8,11 +8,11 @@ router.post('/', (req, res) => {
             if(password===user.password){
                 res.send({message:"Login Successfull",user:user})
             }else{
-                res.send({message:"Password didn't match"})
+                res.send({message:"Email OR Password didn't match"})
 
             }
         }else{
-            res.send({message:"User not registered"})
+            res.send({message:"User not Registered"})
         }
     })
 })
