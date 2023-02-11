@@ -12,7 +12,7 @@ app.use( bodyParser.json() )
 app.use( bodyParser.urlencoded( {extended: true} ) )
 app.use( bodyParser.json() )
 
- mongoose.connect("mongodb+srv://kartiktaak:kartiktaak@cluster0.mtzzkxx.mongodb.net/mern?retryWrites=true&w=majority")
+ mongoose.connect("mongodb+srv://kartik:kartik@cluster0.stecp3q.mongodb.net/?retryWrites=true&w=majority")
            .then(console.log('Connected'))
            .catch(err =>console.log(err))
 

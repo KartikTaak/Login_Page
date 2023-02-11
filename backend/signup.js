@@ -7,7 +7,7 @@ router.post('/', (req, res) => {
         .then(result => {
             if(result.length !== 0) {
               
-                res.status(400).json( {message: 'Email already exists, try again with a different email'} )
+                res.status(400).json( {message: 'Email already exists'} )
             } else {
              
                 const newUser = new Signup({
